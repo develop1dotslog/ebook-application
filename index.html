@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!--<link rel="apple-touch-icon" href="img/apple-touch-icon.png" />-->
+	<link rel="apple-touch-startup-image" href="img/apple-touch-startup-image-320x460.png" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<!--<link rel="shortcut icon" sizes="196x196" href="img/196x196.png">-->
+	<!--<link rel="shortcut icon" sizes="128x128" href="img/128x128.png">-->
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#000000">
+    <!-- Your app title -->
+    <title>Ebook</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.3dpanels.min.css">
+    <link rel="stylesheet" href="css/framework7.indexed-list.min.css">
+    <!-- Path to Framework7 color related styles, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+	<!-- Swipebox -->
+	<link rel="stylesheet" href="css/swipebox.css">
+	<!-- UpScroller -->
+	<link rel="stylesheet" href="css/framework7.upscroller.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="font/flaticon.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body class="theme-black">
+	<!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <!-- Left panel Content -->
+		<div class="list-block media-list">
+		  <!--<ul class="no-border">-->
+			<!--<li>-->
+			  <!--<div class="item-content">-->
+				<!--<div class="item-media"><img src="img/user/1.png" width="60" alt="user"></div>-->
+				<!--<div class="item-inner">-->
+				  <!--<div class="item-title-row margin-top-5">-->
+					<!--<div class="item-title text-bold">Jessica Doe</div>-->
+				  <!--</div>-->
+				  <!--<div class="item-subtitle">Web Designer</div>-->
+				<!--</div>-->
+			  <!--</div>-->
+			<!--</li>-->
+		  <!--</ul>-->
+		</div>
+		
+		<div class="list-block list-menu">
+			<ul class="no-border">
+				<li>
+					<i class="flaticon-home"></i> <a href="home.html" class="close-panel no-animation">Home</a>
+				</li>
+                <li>
+                    <i class="flaticon-chat"></i> <a href="about.html" class="close-panel no-animation">About Author</a>
+                </li>
+			</ul>
+		</div>
+
+      </div>
+    </div>
+    <!-- Views -->
+    <div class="views tabs">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+			<!-- Scrollable page content -->
+            <div class="page-content starter-page">
+				<div class="content-block">
+					<div class="pull-right">
+						<a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+					</div>
+					<div class="clearfix"></div>
+					<div class="starter-content">
+						<img src="" alt="">
+						<h4>Dictionary of Analytical Philosphy</h4>
+                        <br/>
+						<a href="table_content.html" class="btn primary">Walk Through</a>
+					</div>
+               </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/framework7.3dpanels.min.js"></script>
+    <script type="text/javascript" src="js/framework7.indexed-list.min.js"></script>
+    <!-- Slick Carousel -->
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<!-- Swipebox -->
+	<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+	<!-- UpScroller -->
+	<script type="text/javascript" src="js/framework7.upscroller.min.js"></script>
+	<!-- Charts -->
+	<script type="text/javascript" src="js/chart.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  <script>
+	  function loadThatPage(id){
+		  setTimeout(function(){
+			  $(".page-content").scrollTop(id);
+		  },200)
+	  }
+  </script>
+  </body>
+</html>

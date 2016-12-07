@@ -1,0 +1,912 @@
+/*==============================================
+[Main stylesheet my-app.css]
+
+Author:			WM_Team
+Version:		1.0
+Created:		31 July 2016
+Last updated:	31 July 2016
+Template:		Carmella - Mobile Web APP Template
+================================================*/
+/*
+[Table of Contents]
+
+01. HOMEPAGE
+02. LEFT MENU
+03. WALKTHROUGH
+04. LOGIN & REGISTRE & REMEMBER PASSWORD
+05. NEWS
+06. BLOG
+07. SINGLE ARTICLE
+08. LISTs
+09. WEATHER
+10. NOTIFICATIONS
+11. ABOUT 
+12. CONTACT LIST
+13. USERS LIST
+14. CALENDAR
+15. GALLERY
+16. RIGHT PANEL
+17. CONTACT PAGE
+18. TEAM
+
+
+
+/*===============================================*/
+/* 01. HOMEPAGE		 						     */
+/*===============================================*/
+
+.starter-content {
+	padding-top: 60%;
+}
+.starter-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/banner/student.jpg);
+    background-position: 75%;
+	/*background-position: center;*/
+	background-size: cover;
+}
+
+.starter-page h4 {
+	color: #FFFFFF;
+	margin-top: 5px;
+}
+
+.starter-page p {
+	color: #efefef;
+	font-size: 13px;
+	line-height: 18px;
+	margin-top: 10px;
+	width: 80%;
+}
+
+.starter-page .btn {
+	max-width: 100%;
+}
+
+/*===============================================*/
+/* 02. LEFT MENU	 						     */
+/*===============================================*/
+
+.panels-3d {
+    /*background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('../img/banner/books.jpg');*/
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(../img/banner/student.jpg);
+	background-repeat: no-repeat;
+	background-position: 20%;
+	background-size: cover;
+}
+
+.panel-left {
+	background: transparent!important;
+	color: #FFFFFF;
+}
+
+.list-block .item-subtitle {
+	font-size: 13px!important;
+}
+
+.list-menu {
+    font-size: 15px!important;
+}
+
+.list-menu ul li{
+    padding-left: 16px;
+	margin-bottom: 22px;
+}
+
+.list-menu ul li i::before{
+    font-size: 20px!important;
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.list-menu ul li a{
+    color: #FFFFFF;
+}
+
+.item-has-badge {
+	padding-right: 35px;
+	display: inline-block;
+}
+
+.no-border::after,
+.no-border::before {
+	background: none!important;
+}
+
+/*===============================================*/
+/* 03. WALKTHROUGH	 						     */
+/*===============================================*/
+
+#walkthrough-slides {
+	margin-bottom: 30px;
+}
+
+.walkthrough {
+	background-color: #1B1721;
+	color: #FFFFFF;
+}
+
+.walkthrough-slide {
+	color: #333333;
+	width:100%;
+	height: 345px;
+	background: #FFFFFF;
+	text-align: center;
+}
+
+.walkthrough-img {
+	width: 100%;
+	height:200px;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+}
+
+.walkthrough-content {
+	padding: 0px 15px;
+	font-size: 12px;
+}
+
+.walkthrough-title {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 15px;
+}
+
+.walkthrough-description {
+	color: #9E9E9E;
+}
+
+.walkthrough-btn {
+	width: 100%;
+}
+
+.slick-dots li {
+	margin: 0px;
+}
+
+.slick-slide{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.slick-dots li button::before {
+    color: gray;
+}
+
+.slick-dots li.slick-active button::before {
+    color: #FFFFFF;
+	font-size: 14px;
+}
+
+/*===============================================*/
+/* 04. LOGIN & REGISTRE & REMEMBER PASSWORD	     */
+/*===============================================*/
+
+.login-page {
+	background-image: url(../img/login-bg.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.login-page input{
+	text-align: center!important;
+}
+
+.login-page .sign-up {
+	width: 100%;
+}
+
+.login-page {
+	padding-top: 50px;
+}
+
+.login-page .close {
+	position: absolute;
+	top: 15px;
+	right: 0px;
+}
+
+.login-page .close a {
+	padding: 20px;
+	display: block;
+}
+
+.login-page .close  img {
+	width: 15px;
+}
+
+.forgot-password {
+	font-size: 11px;
+}
+
+.list-block.no-border ul::before {
+    background-color: transparent!important;
+}
+
+.link-white {
+	color: #FFFFFF!important;
+}
+
+/*===============================================*/
+/* 05. NEWS			 						     */
+/*===============================================*/
+
+.article {
+	padding: 22px 16px 22px 16px;
+}
+
+.article-gray {
+	background: #EFEFEF;
+}
+
+.article-head {
+	border-bottom: 1px solid #DBDBDB;
+}
+
+.article-date {
+	color: gray;
+	padding-top: 12px;
+}
+
+.article-author {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+
+.article-author-img{
+  margin-right: 1em;
+  width: 32px;
+  height: 32px;
+}
+
+.article-author-name{
+  flex: 1;
+}
+
+.article-content {
+	padding-top: 18px;
+}
+
+.article-has-featured-img {
+	margin-bottom: 18px;
+}
+
+.article-content p {
+	color: gray;
+	line-height: 20px;
+}
+
+.article-content h5 a {
+	color: #333333;
+}
+
+.article-hot i{
+	color: #F36F59;
+	margin-left: 5px;
+}
+
+.article-favorite i{
+	color: #ED8A19;
+	margin-left: 5px;
+}
+
+.article-footer ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+.article-footer ul li {
+	list-style-type: none;
+	display: inline;
+	float: left;
+	margin-right: 19px;
+	font-size: 12px;
+}
+
+.article-footer i {
+	font-size: 14px!important;
+}
+
+/*===============================================*/
+/* 06. BLOG			 						     */
+/*===============================================*/
+
+#blog {
+	padding: 15px;
+}
+
+#blog .row {
+	padding-bottom: 15px;
+}
+
+#blog a {
+	color: #FFFFFF!important;
+}
+
+.blog-article {
+	display: block;
+	background-position: center;
+	background-size: cover;
+	height: 200px;
+	border-radius: 5px;
+	position: relative;
+}
+
+.blog-article-detail {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.shadow-effect {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: -webkit-linear-gradient(top,rgba(0,0,0,.5),transparent 30%,transparent 70%,rgba(0,0,0,.5));
+	background-image: linear-gradient(180deg,rgba(0,0,0,.5) 0,transparent 30%,transparent 70%,rgba(0,0,0,.5));
+}
+
+.blog-article-detail h5{
+	padding-left: 16px;
+}
+
+.blog-article-detail .ks-facebook-avatar{
+	border: 3px solid #FFFFFF!important;
+	height: 34px;
+	width: 34px;
+}
+
+.blog-article-detail .ks-facebook-avatar img,
+.blog-article-detail .ks-facebook-avatar {
+	border-radius: 34px;
+}
+
+
+/*===============================================*/
+/* 07. SINGLE ARTICLE 						     */
+/*===============================================*/
+
+.dropcap {
+    float: left;
+    color: #333333;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.share-post {
+	display: block;
+	margin-top: 3px;
+	color: #333333!important;
+}
+
+.share-post-icon i:before {
+	font-size: 24px;
+}
+
+.share-post-facebook i{
+	color: #3b5998;
+	margin-right: 5px;
+}
+
+.share-post-twitter i{
+	color: #55acee;
+	margin-right: 5px;
+}
+
+.share-post-whatsapp i{
+	color: #4dc247;
+	margin-right: 5px;
+}
+
+.comment-list {
+	background: #EFEFEF;
+}
+
+.comment-list .item-text {
+	margin:0px;
+}
+
+.comment-list.list-block li.media-item .item-inner, .comment-list.list-block.media-list .item-inner {
+	padding-top: 0px!important;
+}
+.comment-list.list-block li.media-item .item-inner, .comment-list.list-block.media-list .item-inner{
+	padding-top: 26px!important;
+	padding-bottom: 10px!important;
+}
+
+.list-block.comment-list .item-media {
+	padding-top: 34px;
+}
+
+.comment-list .article-author-img {
+    margin-right: 1em;
+    width: 45px;
+    height: 45px;
+}
+
+.comment-form .toolbar-inner {
+	padding: 0px 15px;
+}
+
+.comment-form .toolbar-inner,
+.comment-form .toolbar-inner a {
+	color: #FFFFFF!important;
+}
+
+.comment-form.picker-modal {
+	height: 290px;
+}
+.comment-form .list-block input,
+.comment-form .list-block textarea {
+	font-size: 14px;
+}
+
+.comment-form .list-block ul::before {
+    background-color: transparent;
+}
+
+.footer-copyright {
+	padding: 15px;
+	background: #ECECEC;
+	color: gray;
+}
+
+/*===============================================*/
+/* 08. LISTs		 						     */
+/*===============================================*/
+
+.content-background {
+	background: #EFEFEF;
+	color: #6d6d72;
+}
+
+.item-media i:before {
+	font-size: 24px!important;
+	height: 24px!important;
+}
+
+/*===============================================*/
+/* 09. WEATHER		 						     */
+/*===============================================*/
+
+#weather {
+	background-image: url(../img/bg-weather.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#weather .content-block-title {
+	color: #FFFFFF;
+	opacity: 0.7;
+}
+
+.navbar-no-color {
+	background: transparent!important;
+}
+
+.weather-list .item-title,
+.weather-list .item-subtitle,
+.weather-list .item-media  {
+	color: #FFFFFF;
+}
+
+.weather-list .item-media  {
+	padding-top: 10px!important;
+}
+
+.weather-list .item-media i:before {
+	font-size: 40px!important;
+}
+
+.weather-list .item-after {
+	font-size: 35px!important;
+	color: #FF9800;
+}
+
+.weather-list .item-title-row {
+    padding-right: 0px!important;
+    background-image: none!important
+}
+
+#weather .list-block ul::before,
+#weather .list-block ul::after{
+    background-color: rgba(255,255,255,0)!important;
+}
+
+#weather .list-block .item-inner::after {
+    background-color: rgba(255,255,255,0.2)!important;
+}
+
+
+/*===============================================*/
+/* 10. NOTIFICATIONS 						     */
+/*===============================================*/
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	cursor: pointer;
+}
+
+.is-hidden {
+	display: none;
+}
+
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+/*
+.close {
+    float: right;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+a.close {
+    text-decoration: none !important;
+    font-size: 18px !important;
+    line-height: 1.2;
+}
+*/
+
+/*===============================================*/
+/* 11. ABOUT 		 						     */
+/*===============================================*/
+
+.about {
+	padding-top: 0px!important;
+}
+
+.about-bg {
+	background-image: url(../img/about-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+}
+
+.user-profession {
+	color: gray;
+	line-height: 5px;
+}
+
+.item-wrap {
+	border-right: 1px solid rgb(239, 239, 239);
+}
+
+.item-count {
+	font-size: 30px;
+}
+
+.item-label {
+	color: gray;
+}
+
+.follow-btn {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.about-body {
+	padding: 15px;
+	color: gray;
+}
+
+/*===============================================*/
+/* 12. CONTACT LIST 						     */
+/*===============================================*/
+
+.contacts-block .item-media img {
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+}
+
+.contacts-block .item-inner {
+	margin-left: 10px!important;
+}
+
+.contacts-block .item-inner:after {
+	background-color: transparent!important;
+}
+
+.contacts-block .item-media:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    top: auto;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0,0,0,.12);
+    display: block;
+    z-index: 15;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.contacts-block ul li.contact-info {
+	padding-left: 33px;
+}
+
+.contacts-block .item-after a{
+	margin-left: 5px!important;
+}
+
+/*===============================================*/
+/* 13. USERS LIST	 						     */
+/*===============================================*/
+.user {
+	text-align: center;
+	padding: 5px;
+	border: 1px solid #EFEFEF;
+	display:block;
+}
+
+.user img {
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+}
+
+.user .user-time-connect {
+	font-size: 10px;
+	color: gray;
+	margin-top: 5px;
+}
+
+.badge-online {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background: #8BC34A;
+	margin-left: 3px;
+	border-radius: 100%;
+}
+
+/*===============================================*/
+/* 14. CALENDAR							     	 */
+/*===============================================*/
+
+#calendar-date-content {
+	margin-top: 0px!important;
+}
+
+
+.calendar-content-inner:after {
+	background-color: transparent!important;
+}
+
+#calendar-inline-container .close-picker {
+	display: none;
+}
+
+#calendar-inline-container  .picker-header .picker-calendar-selected-date {
+	display: none;
+}
+
+#calendar-inline-container  .picker-modal-inner {
+	padding-top: 15px!important;
+}
+
+#calendar-inline-container  .close-picker {
+	padding-top: 10px!important;
+}
+
+/*===============================================*/
+/* 15. GALLERY							     	 */
+/*===============================================*/
+
+.gallery {
+	padding: 70px 15px 15px!important;
+}
+
+.gallery-img {
+	position: relative;
+	display:block;
+}
+
+.gallery-background {
+	display: block;
+	background-position: center;
+	background-size: cover;
+	height: 150px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+.shadow-effect-gallery {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: -webkit-linear-gradient(top,rgba(0,0,0,.3),transparent 30%,transparent 70%,rgba(0,0,0,.3));
+	background-image: linear-gradient(180deg,rgba(0,0,0,.3) 0,transparent 30%,transparent 70%,rgba(0,0,0,.3));
+}
+
+
+/*===============================================*/
+/* 16. RIGHT PANEL                               */
+/*===============================================*/
+
+.right-panel-socials i:before {
+	font-size: 25px;
+}
+
+.right-panel-socials a {
+	color: #000000;
+}
+
+.progressBar {
+  margin-bottom: 26px;
+  margin-bottom: 1.66em;
+}
+
+.progressBar h6 {
+  font-family: "Montserrat"!important;
+  font-weight: bold;
+  margin-bottom: 7px;
+  margin-bottom: .33em;
+}
+
+.progressBarContainer {
+  width: 100%;
+  max-width: 350px;
+  height: 3px;
+  background: #EFEFEF;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.progressBarValue {
+  height: 3px;
+  float: left;
+  background: #000000;
+}
+
+.value-00 { width: 0; }
+
+.value-10 { width: 10%; }
+
+.value-20 { width: 20%; }
+
+.value-30 { width: 30%; }
+
+.value-40 { width: 40%; }
+
+.value-50 { width: 50%; }
+
+.value-60 { width: 60%; }
+
+.value-70 { width: 70%; }
+
+.value-80 { width: 80%; }
+
+.value-90 { width: 90%; }
+
+.value-100 { width: 100%; }
+
+/*===============================================*/
+/* 17. CONTACT PAGE 						     */
+/*===============================================*/
+
+.contact ul {
+	padding: 0px!important;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.contact ul li {
+	list-style: none;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #EFEFEF;
+	color: gray;
+	padding-bottom: 8px;
+}
+
+/*===============================================*/
+/* 18. TEAM			 						     */
+/*===============================================*/
+
+.team {
+	padding: 15px;
+}
+
+.team-member {
+	background: #EFEFEF;
+	position: relative;
+	margin-top: 15px;
+}
+
+.team-member-image {
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 150px;
+}
+
+.team-member-name {
+	
+}
+
+.team-member-socials ul{
+	padding: 0px!important;
+}
+
+.team-member-socials ul li{
+	list-style:none;
+	display: inline-block;
+}
+
+.team-member-socials a{
+	color: gray;
+}
+
+.team .follow-btn {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000000;
+	width: 100%;
+}
+
+/*Custom*/
+
+.content-block .left{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.content-block .row{
+    line-height: 23px;
+}
+
+.book p, .book h3{
+    text-align: left;
+}
+
+.alpha{
+    font-weight: bold;
+    font-size: 36px;
+}
