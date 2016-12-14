@@ -1,1 +1,1 @@
-# dictionary-of-analytical-philosophy
+# ebook-application
