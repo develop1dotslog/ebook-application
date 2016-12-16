@@ -1,12 +1,3 @@
-/*==============================================
-[Main stylesheet my-app.css]
-
-Author:			WM_Team
-Version:		1.0
-Created:		31 July 2016
-Last updated:	31 July 2016
-Template:		Carmella - Mobile Web APP Template
-================================================*/
 /*
 [Table of Contents]
 
@@ -910,3 +901,12 @@ a.close {
     font-weight: bold;
     font-size: 36px;
 }
+
+.navbar-inner{
+	background: #400c08!important;
+}
+
+.theme-black .searchbar{
+	background: #580f09!important;
+}
+
