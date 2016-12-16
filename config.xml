@@ -3,9 +3,9 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.phonegap.develop1dotslogebook"
+        id        = "com.phonegap.dictionary"
         version   = "1.0.1"
-        versionCode="10001">
+        versionCode="1.0">
 
     <name>Dictionary of Analytical Philosophy</name>
 
